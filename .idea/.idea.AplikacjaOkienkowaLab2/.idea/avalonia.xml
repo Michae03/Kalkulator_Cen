@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="AplikacjaOkienkowaLab2/App.axaml" value="AplikacjaOkienkowaLab2/AplikacjaOkienkowaLab2.csproj" />
+        <entry key="AplikacjaOkienkowaLab2/MainWindow.axaml" value="AplikacjaOkienkowaLab2/AplikacjaOkienkowaLab2.csproj" />
+        <entry key="AplikacjaOkienkowaLab2/SecondWindow.axaml" value="AplikacjaOkienkowaLab2/AplikacjaOkienkowaLab2.csproj" />
+        <entry key="AplikacjaOkienkowaLab2/Windows/MainWindow.axaml" value="AplikacjaOkienkowaLab2/AplikacjaOkienkowaLab2.csproj" />
+        <entry key="AplikacjaOkienkowaLab2/Windows/SecondWindow.axaml" value="AplikacjaOkienkowaLab2/AplikacjaOkienkowaLab2.csproj" />
+      </map>
+    </option>
+  </component>
+</project>
