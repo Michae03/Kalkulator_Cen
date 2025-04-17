@@ -19,6 +19,6 @@
         <Label Grid.Row="0" Grid.Column="2"> Cena zł</Label>
         <Button Grid.Row = "1" Grid.Column="0" FontSize="8" Click="KomputerOnClick">Komputer</Button>
         <Button Grid.Row = "1" Grid.Column="1" FontSize="8">Monitor</Button>
-        <TextBox Grid.Row = "1" Grid.Column="2" Height="40" FontSize="8" Width="80">Text</TextBox>
+        <TextBox Grid.Row = "1" Grid.Column="2" Height="40" FontSize="8" Width="80" IsReadOnly="true">Text</TextBox>
     </Grid>
 </Window>
