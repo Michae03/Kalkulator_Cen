@@ -25,7 +25,7 @@
         <DependentUpon>MainWindow.axaml</DependentUpon>
         <SubType>Code</SubType>
       </Compile>
-      <Compile Update="SecondWindow.axaml.cs">
+      <Compile Update="HardwareWindow.axaml.cs">
         <DependentUpon>SecondWindow.axaml</DependentUpon>
         <SubType>Code</SubType>
       </Compile>

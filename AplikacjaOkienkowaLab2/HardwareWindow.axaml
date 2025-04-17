@@ -1,0 +1,109 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" Width="300" Height="425"
+        CanResize="False"
+        x:Class="AplikacjaOkienkowaLab2.HardwareWindow"
+        Title="Komputer"
+        Background="#1E1E1E">
+    
+    <Window.Styles>
+        <Style Selector="TextBlock">
+            <Setter Property="FontSize" Value="13"/>
+            <Setter Property="Foreground" Value="#CCCCCC"/> 
+            <Setter Property="Margin" Value="4,0"/>
+        </Style>
+        
+        <Style Selector="Button">
+            <Setter Property="FontSize" Value="8"/>
+            <Setter Property="Background" Value="#333333"/>
+            <Setter Property="Foreground" Value="#DDDDDD"/>
+            <Setter Property="Padding" Value="6,3"/>
+            <Setter Property="Margin" Value="4"/>
+            <Setter Property="BorderBrush" Value="#555555"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="CornerRadius" Value="4"/>
+            <Setter Property="Width" Value="50"/>
+        </Style>
+        
+        <Style Selector="TextBox">
+            <Setter Property="FontSize" Value="15"/>
+            <Setter Property="Height" Value="28"/>
+            <Setter Property="Margin" Value="4,0"/>
+            <Setter Property="Background" Value="#2A2A2A"/>
+            <Setter Property="Foreground" Value="#DDDDDD"/>
+            <Setter Property="BorderBrush" Value="#444444"/>
+            <Setter Property="BorderThickness" Value="1"/>
+        </Style>
+
+        <Style Selector="RadioButton">
+            <Setter Property="FontSize" Value="13"/>
+            <Setter Property="Background" Value="#333333"/>
+            <Setter Property="Foreground" Value="#DDDDDD"/>
+            <Setter Property="Padding" Value="8,2"/>
+            <Setter Property="Margin" Value="4,2"/>
+            <Setter Property="BorderBrush" Value="#444444"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="CornerRadius" Value="4"/>
+            <Setter Property="Width" Value="150"></Setter>
+        </Style>
+        
+        <Style Selector="ComboBox">
+            <Setter Property="FontSize" Value="13"/>
+            <Setter Property="Height" Value="28"/>
+            <Setter Property="Background" Value="#2A2A2A"/>
+            <Setter Property="Foreground" Value="#DDDDDD"/>
+            <Setter Property="BorderBrush" Value="#444444"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Padding" Value="6,3"/>
+        </Style>
+        
+        <Style Selector="ComboBoxItem">
+            <Setter Property="Background" Value="#333333"/>
+            <Setter Property="Foreground" Value="#DDDDDD"/>
+            <Setter Property="Padding" Value="6,3"/>
+        </Style>
+    </Window.Styles>
+    
+    <Border BorderThickness="1" BorderBrush="#444444" Padding="10" Background="#1E1E1E">
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Spacing="15" Margin="20">
+            <Border BorderThickness="1" BorderBrush="#444444" Padding="10" Background="#1E1E1E">
+                <StackPanel Orientation="Vertical" Spacing="20">
+                    <StackPanel Spacing="20" Orientation="Horizontal">
+                        <TextBlock>Procesor</TextBlock>
+                        <TextBox Name="ProcessorPrice" IsReadOnly="true" ></TextBox>
+                        <TextBlock>zł</TextBlock>
+                    </StackPanel>
+                    <ComboBox SelectionChanged="SelectingItemsControl_OnSelectionChanged" HorizontalAlignment="Center">
+                        <ComboBoxItem Tag="200">Intel Celeron G5905</ComboBoxItem>
+                        <ComboBoxItem Tag="375">Intel Core i3-12100F</ComboBoxItem>
+                        <ComboBoxItem Tag="550">AMD Ryzen 5 5600X</ComboBoxItem>
+                        <ComboBoxItem Tag="2500">Intel Core i9-13900K</ComboBoxItem>
+                    </ComboBox>
+                </StackPanel>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="#444444" Padding="10" Background="#1E1E1E">
+                <StackPanel Orientation="Vertical" Spacing="10">
+                    <StackPanel Orientation="Horizontal" Spacing="20">
+                        <TextBlock>Dysk</TextBlock>
+                        <TextBox Name="DiskPrice" IsReadOnly="true" ></TextBox>
+                        <TextBlock>zł</TextBlock>
+                    </StackPanel>
+                    <Border BorderThickness="1" BorderBrush="#444444" Padding="10" Background="#1E1E1E">
+                        <StackPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center">
+                            <RadioButton Tag="90" Click="RadioButton_OnClick">240 GB SSD</RadioButton>
+                            <RadioButton Tag="145" Click="RadioButton_OnClick">500 GB SATA</RadioButton>
+                            <RadioButton Tag="250" Click="RadioButton_OnClick">1000 GB SATA</RadioButton>
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+            </Border>
+            <TextBlock  VerticalAlignment="Center" HorizontalAlignment="Center">Reszta : 1000 zł</TextBlock>
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center" Spacing="20">
+                <Button Click="Ok_Button_OnClick">Ok</Button>
+                <Button Click="Cancel_Button_OnClick">Anuluj</Button>
+            </StackPanel>
+        </StackPanel>
+    </Border>
+</Window>

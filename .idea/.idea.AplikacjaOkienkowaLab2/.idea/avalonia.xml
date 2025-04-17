@@ -4,7 +4,9 @@
     <option name="projectPerEditor">
       <map>
         <entry key="AplikacjaOkienkowaLab2/App.axaml" value="AplikacjaOkienkowaLab2/AplikacjaOkienkowaLab2.csproj" />
+        <entry key="AplikacjaOkienkowaLab2/HardwareWindow.axaml" value="AplikacjaOkienkowaLab2/AplikacjaOkienkowaLab2.csproj" />
         <entry key="AplikacjaOkienkowaLab2/MainWindow.axaml" value="AplikacjaOkienkowaLab2/AplikacjaOkienkowaLab2.csproj" />
+        <entry key="AplikacjaOkienkowaLab2/ScreenWindow.axaml" value="AplikacjaOkienkowaLab2/AplikacjaOkienkowaLab2.csproj" />
         <entry key="AplikacjaOkienkowaLab2/SecondWindow.axaml" value="AplikacjaOkienkowaLab2/AplikacjaOkienkowaLab2.csproj" />
         <entry key="AplikacjaOkienkowaLab2/Windows/MainWindow.axaml" value="AplikacjaOkienkowaLab2/AplikacjaOkienkowaLab2.csproj" />
         <entry key="AplikacjaOkienkowaLab2/Windows/SecondWindow.axaml" value="AplikacjaOkienkowaLab2/AplikacjaOkienkowaLab2.csproj" />
